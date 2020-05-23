@@ -1,0 +1,33 @@
+<html>
+<head>
+<title>Limitar caracteres textarea</title>
+<script type="text/javascript" src="LimitadorTextArea.js"></script>
+</head>
+<body>
+<br>
+Este es un ejemplo de un textarea limitado por 80 caracteres
+o 16 palabras, cualquiera viene primero.
+<br>
+ 
+<form name="myForm">
+<textarea cols="30" rows="5" name="TextField" onBlur="InputLengthCheck();" onKeyUp="InputLengthCheck();">
+</textarea>
+<br>
+<input readonly type="text" name="CharsTyped" size="8"> caracteres tipeados
+<br>
+<input readonly type="text" name="CharsLeft" size="8"> caracteres que quedan
+<br>
+<input readonly type="text" name="WordsTyped" size="8"> palabras tipeadas
+<br>
+<input readonly type="text" name="WordsLeft" size="8"> palabras que quedan
+</form>
+<br>
+La etiqueta formulario debe tener un nombre = atributo. Además de este ejemplo, tu formulario probablemente tendrá un metodo y acción, atributos y posiblemente otros. 
+
+Este ejemplo usa el campo TEXTAREA como el texto para ser monitoriado. Un INPUT bype="text" podría ser usado en su lugar.
+ 
+Los sgtes campos estan en donde el número de caracteres tipeados, el número de caracteres que quedan y los mismo con las palabras. Son campos
+de solo lectura y no pueden ser modificados.
+ 
+</body>
+</html>
